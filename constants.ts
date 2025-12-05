@@ -50,7 +50,28 @@ export const PROJECTS: Project[] = [
     imageUrl: '/images/parent_powered_aba.png',
     link: 'https://parentpoweredaba.com/',
     category: 'CS',
-  }
+  },
+  {
+    id: 'gis-3',
+    title: 'Map of Provo',
+    description: 'Aesthetic map of Provo, created with ArcGIS Pro',
+    tags: ['Tool 1', 'Tool 2'],
+    // Ensure image is in public/images/ folder
+    imageUrl: '/images/Provo_Poster_BW.png', 
+    category: 'GIS', // Change to 'CS' if needed
+  },
+    // --- COPY AND PASTE THIS BLOCK TO ADD A NEW PROJECT ---
+  // {
+  //   id: 'new-project-1',
+  //   title: 'Your Project Title',
+  //   description: 'Description of what you built or analyzed.',
+  //   tags: ['Tool 1', 'Tool 2'],
+  //   // Ensure image is in public/images/ folder
+  //   imageUrl: '/images/your-image-name.jpg', 
+  //   category: 'GIS', // Change to 'CS' if needed
+  //   link: 'https://your-live-link.com', // Optional
+  //   github: 'https://github.com/your-repo', // Optional
+  // },
 ];
 
 export const PAPERS: Paper[] = [
