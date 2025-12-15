@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
     title: 'Exploring Urban Expansion in HCMC with Landsat Satellite Imagery',
     description: 'A comprehensive spatial analysis of urban area in Ho Chi Minh City using Landsat 5, 7, 8, and 9 satellite imagery.',
     tags: ['ArcGIS Pro', 'Remote Sensing', 'Python'],
-    imageUrl: '/images/HCMC_NDVI_2024.jpg',
+    imageUrl: '/images/HCMC_NDVI_Animation.gif',
     category: 'GIS',
   },
   {
@@ -55,7 +55,7 @@ export const PROJECTS: Project[] = [
     id: 'gis-3',
     title: 'Map of Provo',
     description: 'Aesthetic map of Provo, created with ArcGIS Pro',
-    tags: ['Tool 1', 'Tool 2'],
+    tags: ['ArcGIS Pro', 'Open Street Maps'],
     // Ensure image is in public/images/ folder
     imageUrl: '/images/Provo_Poster_BW.png', 
     category: 'GIS', // Change to 'CS' if needed
@@ -92,6 +92,15 @@ export const PAPERS: Paper[] = [
     abstract: 'Analysis of potential implications from the implementation of a U.S. Bitcoin Strategic Reserve. Article examines possible economic outcomes, technological advancements, and financial security for the U.S.',
     authors: ['Devin Q. Tran'],
     pdfUrl: '/public/papers/Final_Conference_Paper.pdf'
+  },
+  {
+    id: 'p3',
+    title: 'National Security Implications of Advanced Air Mobility (AAM): Cyber and Physical Threats in an Evolving Airspace',
+    journal: 'BYU Geography',
+    year: 2025,
+    abstract: 'This paper will examine how a distributed network created by AAM technology expands the national threat landscape by converging aviation, critical infrastructure, and cybersecurity. Threats created by this unique cyber-physical relationship will need to be addressed through a comprehensive whole-of-government approach combining federal authority, state implementation, and local coordination to secure this new aviation ecosystem.',
+    authors: ['Devin Q. Tran'],
+    pdfUrl: '/public/papers/AAM_Research_Paper_Devin_Tran.pdf'
   }
 ];
 
