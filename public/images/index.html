@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paima - A collection of 777 vibrant arapaima NFTs on Sui blockchain, supporting Amazon rainforest conservation.">
+    <meta name="keywords" content="NFT, Paima, arapaima, Sui blockchain, conservation, Amazon, Rainforest Foundation">
+    <title>Paima | NFT Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">PAIMA</div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#collection">Collection</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#team">Team</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+        <a href="#mint" class="cta-button">Connect Wallet</a>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover The Paima NFT Collection</h1>
+            <p>A limited edition of 777 vibrant arapaima NFTs living on the Sui blockchain. Join our community and help protect the Amazon rainforest.</p>
+            <div class="hero-buttons">
+                <a href="#mint" class="cta-button">Mint Now</a>
+                <a href="#collection" class="secondary-button">View Collection</a>
+            </div>
+        </div>
+        <img src="/api/placeholder/600/600" alt="Paima NFT" class="hero-image" />
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="section-title">About Paima</h2>
+            <p>Paima is a collection of <strong>777 vibrant arapaima</strong> NFTs on the <strong>Sui blockchain</strong>, celebrating one of the Amazon's most awe-inspiring creatures.</p>
+            <p>The arapaima, a majestic fish native to the Amazon River, can grow over <strong>10 feet long</strong>, embodying the beauty and mystery of the rainforest.</p>
+            <div class="donation-info">
+                <h3>Conservation Commitment</h3>
+                <p>A portion of all proceeds from this collection will be donated to the Rainforest Foundation, directly supporting efforts to protect the Amazon and its countless species.</p>
+                <a href="https://rainforestfoundation.org/" target="_blank" class="secondary-button">Learn More</a>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="/api/placeholder/500/600" alt="Arapaima Fish" />
+        </div>
+    </section>
+    
+    <!-- Featured NFTs -->
+    <section class="featured" id="collection">
+        <h2 class="section-title">Featured NFTs</h2>
+        <p>Explore our vibrant arapaima collection with unique traits and rarities.</p>
+        <div class="nft-grid">
+            <div class="nft-card">
+                <img src="/api/placeholder/300/300" alt="Paima NFT #1" class="nft-image" />
+                <div class="nft-info">
+                    <h3 class="nft-title">Paima #137</h3>
+                    <p>Rarity: Legendary</p>
+                    <p class="nft-price">25 SUI</p>
+                </div>
+            </div>
+            <div class="nft-card">
+                <img src="/api/placeholder/300/300" alt="Paima NFT #2" class="nft-image" />
+                <div class="nft-info">
+                    <h3 class="nft-title">Paima #420</h3>
+                    <p>Rarity: Epic</p>
+                    <p class="nft-price">20 SUI</p>
+                </div>
+            </div>
+            <div class="nft-card">
+                <img src="/api/placeholder/300/300" alt="Paima NFT #3" class="nft-image" />
+                <div class="nft-info">
+                    <h3 class="nft-title">Paima #77</h3>
+                    <p>Rarity: Rare</p>
+                    <p class="nft-price">15 SUI</p>
+                </div>
+            </div>
+            <div class="nft-card">
+                <img src="/api/placeholder/300/300" alt="Paima NFT #4" class="nft-image" />
+                <div class="nft-info">
+                    <h3 class="nft-title">Paima #88</h3>
+                    <p>Rarity: Uncommon</p>
+                    <p class="nft-price">12 SUI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mint Section -->
+    <section class="mint-section" id="mint">
+        <h2 class="section-title">Mint Your Paima</h2>
+        <p>Join our community and help protect the Amazon rainforest</p>
+        <div class="mint-container">
+            <div id="wallet-status">Wallet not connected</div>
+            <div class="mint-counter">
+                <button class="counter-btn" id="decrease-btn">-</button>
+                <span class="counter-value" id="mint-count">1</span>
+                <button class="counter-btn" id="increase-btn">+</button>
+            </div>
+            <div class="mint-price">
+                Price: <span class="price-value" id="total-price">15 SUI</span>
+            </div>
+            <p>Max 5 NFTs per transaction</p>
+            <button class="mint-button" id="mint-btn">Connect Wallet to Mint</button>
+        </div>
+    </section>
+    
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <h2 class="section-title">Mint Date</h2>
+        <p>Be ready to mint your own Paima and join our conservation movement</p>
+        <div class="countdown-container">
+            <div id="countdown">Loading...</div>
+        </div>
+    </section>
+    
+    <!-- Roadmap -->
+    <section class="roadmap" id="roadmap">
+        <h2 class="section-title">Roadmap</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Q1 2025</div>
+                    <h3>Phase 1: Launch</h3>
+                    <p>Public mint of 777 Paima NFTs, community building, and partnership with Rainforest Foundation. First 100 minters get exclusive airdrops.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Q2 2025</div>
+                    <h3>Phase 2: Conservation</h3>
+                    <p>First donation to Rainforest Foundation, conservation awareness events, and educational content about the Amazon ecosystem.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Q3 2025</div>
+                    <h3>Phase 3: Community Expansion</h3>
+                    <p>Community voting on conservation projects, exclusive holder events, and development of sustainable merchandise.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Q4 2025</div>
+                    <h3>Phase 4: Future Projects</h3>
+                    <p>Launch of additional conservation-focused collections, community governance, and expanded partnerships with environmental organizations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team -->
+    <section class="team" id="team">
+        <h2 class="section-title">Meet The Team</h2>
+        <p>The creative minds behind the Paima NFT Collection.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="/api/placeholder/300/300" alt="Team Member 1" class="member-image" />
+                <div class="member-info">
+                    <h3 class="member-name">Alex Paima</h3>
+                    <p class="member-role">Founder & Artist</p>
+                    <p>Digital artist with a passion for wildlife conservation and creating unique digital collectibles.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">D</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/api/placeholder/300/300" alt="Team Member 2" class="member-image" />
+                <div class="member-info">
+                    <h3 class="member-name">Sam Blockchain</h3>
+                    <p class="member-role">Developer</p>
+                    <p>Experienced blockchain developer specializing in Sui and environmentally-focused NFT projects.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">G</a>
+                        <a href="#" class="social-link">D</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="/api/placeholder/300/300" alt="Team Member 3" class="member-image" />
+                <div class="member-info">
+                    <h3 class="member-name">Taylor Crypto</h3>
+                    <p class="member-role">Marketing</p>
+                    <p>Marketing specialist with expertise in conservation awareness and building eco-conscious communities.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">T</a>
+                        <a href="#" class="social-link">I</a>
+                        <a href="#" class="social-link">L</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What is the Paima NFT Collection?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Paima is a limited collection of 777 unique digital arapaima fish living on the Sui blockchain. Each NFT is uniquely generated with various traits and characteristics of different rarities, inspired by the majestic arapaima fish native to the Amazon river.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How can I mint a Paima NFT?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>You can mint Paima NFTs directly on our website by connecting your Sui-compatible wallet and clicking the "Mint" button. The minting process requires SUI tokens for the mint price plus gas fees.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How does Paima support conservation?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>A portion of all proceeds from the Paima NFT collection will be donated directly to the Rainforest Foundation to support their efforts in protecting the Amazon rainforest and its wildlife, including the arapaima fish. We will provide transparent tracking of all donations.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>When is the mint date?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>The public mint will begin on March 15, 2025, at 3 PM UTC. Whitelist members will have early access 24 hours before the public mint.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What blockchain is Paima built on?</span>
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Paima NFTs are minted on the Sui blockchain, chosen for its energy efficiency and low environmental impact compared to other blockchain networks.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-logo">PAIMA</div>
+                <p class="footer-description">A collection of 777 vibrant arapaima NFTs celebrating Amazon diversity and supporting conservation efforts.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">T</a>
+                    <a href="#" class="social-link">D</a>
+                    <a href="#" class="social-link">I</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Sui Documentation</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Rainforest Foundation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Paima NFT Collection. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple JavaScript for countdown (Replace with actual mint date)
+        document.addEventListener('DOMContentLoaded', function () {
+            const countdownElement = document.getElementById('countdown');
+            const mintDate = new Date('March 15, 2025 15:00:00 UTC').getTime();
+            
+            const updateCountdown = function() {
+                const now = new Date().getTime();
+                const distance = mintDate - now;
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                countdownElement.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                
+                if (distance < 0) {
+                    clearInterval(countdownInterval);
+                    countdownElement.innerText = 'Mint Live Now!';
+                }
+            };
+            
+            updateCountdown();
+            const countdownInterval = setInterval(updateCountdown, 1000);
+            
+            // FAQ accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        this.querySelector('span:last-child').textContent = '+';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        this.querySelector('span:last-child').textContent = '-';
+                    }
+                });
+            });
+            
+            // Mint counter
+            const decreaseBtn = document.getElementById('decrease-btn');
+            const increaseBtn = document.getElementById('increase-btn');
+            const mintCount = document.getElementById('mint-count');
+            const totalPrice = document.getElementById('total-price');
+            const pricePerNFT = 15;
+            const maxMint = 5;
+            
+            decreaseBtn.addEventListener('click', function() {
+                let count = parseInt(mintCount.textContent);
+                if (count > 1) {
+                    count--;
+                    mintCount.textContent = count;
+                    totalPrice.textContent = `${count * pricePerNFT} SUI`;
+                }
+            });
+            
+            increaseBtn.addEventListener('click', function() {
+                let count = parseInt(mintCount.textContent);
+                if (count < maxMint) {
+                    count++;
+                    mintCount.textContent = count;
+                    totalPrice.textContent = `${count * pricePerNFT} SUI`;
+                }
+            });
+            
+            // Intersection Observer for animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.animate-on-scroll').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

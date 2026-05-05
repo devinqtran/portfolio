@@ -52,6 +52,15 @@ export const PROJECTS: Project[] = [
     category: 'CS',
   },
   {
+    id: 'cs-3',
+    title: 'Chess Full-Stack Application',
+    description: 'This project demonstrates mastery of proper software design, client/server architecture, networking using HTTP and WebSocket, database persistence, unit testing, serialization, and security.',
+    tags: ['Java', 'JavaScript', 'Client', 'Server'],
+    imageUrl: '/images/chess.png',
+    github: 'https://github.com/devinqtran/chess',
+    category: 'CS',
+  },
+  {
     id: 'gis-3',
     title: 'Map of Provo',
     description: 'Aesthetic map of Provo, created with ArcGIS Pro',
@@ -60,6 +69,15 @@ export const PROJECTS: Project[] = [
     imageUrl: '/images/Provo_Poster_BW.png', 
     category: 'GIS', // Change to 'CS' if needed
   },
+  {
+    id: 'gis-4',
+    title: 'OKNP Land Classification',
+    description: 'Object-based and pixel-based classifications created using Sentinel-2 imagery of Odzala-Kokoua National Park',
+    tags: ['ArcGIS Pro', 'Sentinel-2', 'Ecognition', 'ENVI'],
+    // Ensure image is in public/images/ folder
+    imageUrl: '/images/Odzala_Kokoua.png', 
+    category: 'GIS', // Change to 'CS' if needed
+  }
     // --- COPY AND PASTE THIS BLOCK TO ADD A NEW PROJECT ---
   // {
   //   id: 'new-project-1',
@@ -101,6 +119,15 @@ export const PAPERS: Paper[] = [
     abstract: 'This paper will examine how a distributed network created by AAM technology expands the national threat landscape by converging aviation, critical infrastructure, and cybersecurity. Threats created by this unique cyber-physical relationship will need to be addressed through a comprehensive whole-of-government approach combining federal authority, state implementation, and local coordination to secure this new aviation ecosystem.',
     authors: ['Devin Q. Tran'],
     pdfUrl: '/public/papers/AAM_Research_Paper_Devin_Tran.pdf'
+  },
+  {
+    id: 'p4',
+    title: 'Mapping Land Cover Change in Odzala-Kokoua National Park',
+    journal: 'BYU Geography',
+    year: 2026,
+    abstract: 'This project aims to assess the extent and spatial distribution of mining and agricultural activity within the park.',
+    authors: ['Devin Q. Tran', 'Samuel Badal'],
+    pdfUrl: '/public/papers/OKNP_Report_2026.pdf'
   }
 ];
 
